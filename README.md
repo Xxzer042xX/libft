@@ -1,78 +1,78 @@
 # Libft
 
-Libft est une bibliothèque C standard que j'ai développée pour fournir des fonctions utilitaires communes et souvent utilisées en programmation C. Elle comprend des fonctions pour la manipulation de chaînes, la gestion de la mémoire, et des fonctionnalités bonus liées aux listes chaînées.
+Libft is a standard C library I developed to provide common and often-used utility functions in C programming. It includes functions for string manipulation, memory management, and bonus features related to linked lists.
 
-## Table des Matières
+## Table of Contents
 
 - [Introduction](#introduction)
-- [Fonctionnalités](#fonctionnalités)
+- [Features](#features)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Exemples](#exemples)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
-Libft est conçue pour offrir des fonctions similaires à celles trouvées dans les bibliothèques standard de C. Elle est particulièrement utile pour les projets où vous avez besoin de fonctionnalités de base sans dépendre de la bibliothèque standard C.
+Libft is designed to offer functions similar to those found in the standard C libraries. It is particularly useful for projects where you need basic functionalities without relying on the standard C library.
 
-## Fonctionnalités
+## Features
 
-### Fonctions de Manipulation de Chaînes
+### String Manipulation Functions
 
-- `ft_strlen` - Retourne la longueur d'une chaîne.
-- `ft_strchr` - Trouve la première occurrence d'un caractère dans une chaîne.
-- `ft_strcmp` - Compare deux chaînes de caractères.
+- `ft_strlen` - Returns the length of a string.
+- `ft_strchr` - Finds the first occurrence of a character in a string.
+- `ft_strcmp` - Compares two strings.
 
-### Fonctions de Gestion de la Mémoire
+### Memory Management Functions
 
-- `ft_memset` - Remplit un bloc de mémoire avec une valeur donnée.
-- `ft_calloc` - Alloue et initialise une zone de mémoire.
-- `ft_strdup` - Duplique une chaîne de caractères.
+- `ft_memset` - Fills a block of memory with a given value.
+- `ft_calloc` - Allocates and initializes a memory area.
+- `ft_strdup` - Duplicates a string.
 
-### Fonctions Bonus (Listes Chaînées)
+### Bonus Functions (Linked Lists)
 
-- `ft_lstnew` - Crée un nouvel élément de liste.
-- `ft_lstadd_front` - Ajoute un élément au début de la liste.
-- `ft_lstsize` - Compte le nombre d'éléments dans la liste.
+- `ft_lstnew` - Creates a new list element.
+- `ft_lstadd_front` - Adds an element to the beginning of the list.
+- `ft_lstsize` - Counts the number of elements in the list.
 
 ## Installation
 
-Pour compiler et utiliser Libft, suivez ces étapes :
+To compile and use Libft, follow these steps:
 
-1. **Clonez le dépôt :**
-
-   ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
-   ```
-
-2. **Accédez au répertoire du projet :**
+1. **Clone the repository:**
 
    ```bash
-   cd votre-repo
+   git clone https://github.com/your-username/your-repo.git
    ```
 
-3. **Compilez la bibliothèque :**
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd your-repo
+   ```
+
+3. **Compile the library:**
 
    ```bash
    make
    ```
 
-   Cette commande générera le fichier `libft.a` dans le répertoire racine du projet.
+   This command will generate the `libft.a` file in the root directory of the project.
 
-## Utilisation
+## Usage
 
-Pour utiliser Libft dans votre projet, ajoutez le fichier d'en-tête `libft.h` et liez la bibliothèque `libft.a` lors de la compilation de votre projet. Voici un exemple de compilation :
+To use Libft in your project, add the header file `libft.h` and link the `libft.a` library when compiling your project. Here’s an example of compilation:
 
 ```bash
-gcc -o mon_programme mon_programme.c -L. -lft
+gcc -o my_program my_program.c -L. -lft
 ```
 
-Assurez-vous d'inclure le répertoire `include` dans les chemins de recherche des en-têtes, si vous avez choisi de stocker vos fichiers d'en-tête dans un répertoire `include`.
+Make sure to include the `include` directory in the header search paths if you chose to store your header files in an `include` directory.
 
-## Exemples
+## Examples
 
-Voici quelques exemples d'utilisation des fonctions principales de Libft :
+Here are some examples of using the main functions of Libft:
 
 ```c
 #include "libft.h"
@@ -80,22 +80,22 @@ Voici quelques exemples d'utilisation des fonctions principales de Libft :
 
 int main(void) {
     char str[] = "Hello, World!";
-    printf("La longueur de la chaîne est : %zu\n", ft_strlen(str));
-    printf("Première occurrence de 'W': %s\n", ft_strchr(str, 'W'));
+    printf("The length of the string is: %zu\n", ft_strlen(str));
+    printf("First occurrence of 'W': %s\n", ft_strchr(str, 'W'));
     return 0;
 }
 ```
 
-## Contribuer
+## Contributing
 
-Si vous souhaitez contribuer à Libft, vous pouvez :
+If you want to contribute to Libft, you can:
 
-1. **Faire une demande de fusion (Pull Request)** en ajoutant vos modifications ou améliorations.
-2. **Signaler des problèmes** en ouvrant une issue sur le dépôt GitHub.
-3. **Discuter des améliorations potentielles** en ouvrant une issue ou en soumettant des propositions.
+1. **Make a pull request** by adding your modifications or improvements.
+2. **Report issues** by opening an issue on the GitHub repository.
+3. **Discuss potential improvements** by opening an issue or submitting proposals.
 
-Veuillez vous assurer de tester vos contributions et de respecter les bonnes pratiques de codage.
+Please ensure to test your contributions and adhere to good coding practices.
 
-## Licence
+## License
 
-Ce projet est sous la licence [MIT](LICENSE).
+This project is under the [MIT](LICENSE) license.
